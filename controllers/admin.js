@@ -21,6 +21,8 @@ exports.postAddProduct = (req, res, next) => {
   });
   product
     .save()
+  //save-> this function is inbuilt in mongoose library
+  
     .then((result) => {
       // console.log(result);
       console.log("Created Product");
